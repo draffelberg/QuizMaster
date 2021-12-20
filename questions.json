@@ -1,0 +1,121 @@
+[
+    {
+        "question": "Was ist Azure DevOps?",
+        "amswers": [
+            "Azure DevOps ermöglich das Remote arbeit",
+            "Es ist ein Cloudplattform und besteht aus mer als 1000 Prdukten und Clouddiesten.",
+            "Es eine entwicklungsumgebung womit dynamische Test und automatisierungstest durchgefüht können.",
+            "Es ist eine dauerhaft Kostenlose Azure-dienste für Development und Operations."
+        ],
+        "coorect": 3
+    },
+    {
+        "question": "Welche Nachteile von Chatbots sind unten richtig aufgelistet?",
+        "amswers": [
+            "verstehen Ironie, verstehen 50% der Emotionen und sind mehrsprachig.",
+            "verstehen keine Ironie, keine Emotionen und sind nicht mehrsprachig.",
+            "verstehen keine Ironie, verstehen 50% der Emotionen und sind nicht mehrsprachig.",
+            "verstehen keine Ironie, verstehen 70% der Emotionen und sind nicht mehrsprachig."
+        ],
+        "coorect": 1
+    },
+    {
+        "question": "Wer ist Robert Cecil martin?",
+        "amswers": [
+            "Der Autor von 'Clean Code: A Hanbbook of agile Software Craftsmanship' und einer der Mitwirkenden bei der Erstellung der 12 Prinzipien des Agilen Manifests.",
+            "Der Autor von 'Clean Code: A Hanbbook of agile Software Craftsmanship' und einer der Mitwirkenden bei der Erstellung der 20 Prinzipien des Agilen Manifests.",
+            "Der Gründer des KFC.",
+            "Der US-Präsident von 1967 bis 1963."
+        ],
+        "coorect": 0
+    },
+    {
+        "question": "Was ist Docker?",
+        "amswers": [
+            "Docker ermöglicht es uns, Nachrichten Ohne Internet zu senden.",
+            "docker erleichtern den Transport von daten und Personen durch die reduzierung von Kosten und Zeit. ",
+            "Docker ist eine leichtgewichtige Open-Source-Technologie zur Containerisierung.",
+            "Docker ist eine leichtgewichtige nicht Open-Source-Technologie zur Containerisierung."
+        ],
+        "coorect": 2
+    },
+    {
+        "question": "Wofür steht die Abkürzung OWASP?",
+        "amswers": [
+            "Open World Application Security Plattform",
+            "Open Web Android Security Plattform",
+            "Open World Application Security Project",
+            "Open Web Application Security Project"
+        ],
+        "coorect": 3
+    },
+    {
+        "question": "Was ist Phishing?",
+        "amswers": [
+            "Betrugsversuch, bei dem der empfänger eine gefälschte E-Mail zugesendet bekommt, die er häufig jedoch nicht als solche im ersten Moment erkennt.",
+            "Die Fischerei im sommer.",
+            "Betrugsversuch, bei dem der Absender eine gefälschte E-Mail zugesendet bekommt, die er häufig jedoch nicht als solche im ersten Moment erkennt.",
+            "Die Fischerei im Winter."
+        ],
+        "coorect": 0
+    },
+    {
+        "question": "Welche Antwort listet die Prinzipien des Social Engineering korrekt auf?",
+        "amswers": [
+            "Glauben, Vertrauen, social Proof, Druck aufbauen, Autorität",
+            "Einschüchter, Glauben, social Proof, Druck aufbauen, Autorität",
+            "Einschüchter, Vertrauen, social Proof, Augen Kontakt halten, Autorität",
+            "Einschüchter, Vertrauen, social Proof, Druck aufbauen, Autorität"
+        ],
+        "coorect": 3
+    },
+    {
+        "question": "Wie hoch sind die Überlebenschancen nach einer Strahlenexposition mit einer Äquivalentdosis von mehr als 10Sv?",
+        "amswers": [
+            "Tod nach ca. einer Stunde",
+            "50%",
+            "90%",
+            "Der Tod kann vermieden werden, wenn der Patient innerhalb von 15 Minuten nach der Strahlenexposition behandelt wird."
+        ],
+        "coorect": 0
+    },
+    {
+        "question": "Transzendale Algebra",
+        "amswers": [
+            "ist eine Zeichensprache für Menschen mit Sehbehinderung.",
+            "ist eine Zeichensprache, die nur zur Gestaltung von Straßenschildern verwendet wird.",
+            "ist eine Zeichensprache, die sich für die nonverbale Kommunikation eignet.",
+            "ist eine Zeichensprache, die nur von Miliraten zur Verschlüsselung ihrer Nachrichten verwendet wird."
+        ],
+        "coorect": 2
+    },
+    {
+        "question":"Wozu die Blockchain dient?",
+        "amswers": [
+            "Schnell mit Bitcoin bezahlen und dabei Steuern vermeiden.",
+            "Daten zu verschlüsseln.",
+            "Banküberweisungen durch die Abschaffung internationaler Gebühren erleichtern und die Versandzeiten verlängern.",
+            "ermöglicht die Speicherung und Übertragung von Informationen auf transparente, sichere Weise und ohne zentrale Kontrollinstanz."
+        ],
+        "coorect": 3
+    },
+    {
+        "question": "In Welchem Jahr wurde x gegründet?",
+        "amswers": [
+            "01.12.2001",
+            "12.01.2001",
+            "12.12.2001",
+            "01.02.2001"
+        ],
+        "coorect": 0
+    },  {
+        "question": "Wie heißen die Trainer des Bootcamps im Dezember 2021? ",
+        "amswers": [
+            "Marrius, Markus,Jürgen",
+            "Marius, Markus Jürgen",
+            "BenJamin, Beniermann,Markus",
+            "Melissa, Monika, Jürgen"
+        ],
+        "coorect": 1
+    }
+]
