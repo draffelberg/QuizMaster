@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizmaster</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Willkommen zum Quiz</h1>
+            <script src="game.js"></script>
+        </header>
+
+        <section>
+            <form name="nameForm"">Name: 
+            <input type="text" name="name">
+            </form>
+
+            <div id="resultat"></div>
+
+            <form name="quizForm" onsubmit="return submitAnswers()">
+            <h3>Frage 1</h3>
+            <input type="radio" name="f1" value="a" id="f1a"> a. Antwort<br>
+            <input type="radio" name="f1" value="b" id="f1b"> b. Antwort<br>
+            <input type="radio" name="f1" value="c" id="f1c"> c. Antwort<br>
+            <input type="radio" name="f1" value="d" id="f1d"> d. Antwort<br>
+            
+            <h3>Frage 2</h3>
+            <input type="radio" name="f2" value="a" id="f2a"> a. Antwort<br>
+            <input type="radio" name="f2" value="b" id="f2b"> b. Antwort<br>
+            <input type="radio" name="f2" value="c" id="f2c"> c. Antwort<br>
+            <input type="radio" name="f2" value="d" id="f2d"> d. Antwort<br>
+
+            <h3>Frage 3</h3>
+            <input type="radio" name="f3" value="a" id="f3a"> a. Antwort<br>
+            <input type="radio" name="f3" value="b" id="f3b"> b. Antwort<br>
+            <input type="radio" name="f3" value="c" id="f3c"> c. Antwort<br>
+            <input type="radio" name="f3" value="d" id="f3d"> d. Antwort<br>
+
+            <h3>Frage 4</h3>
+            <input type="radio" name="f4" value="a" id="f4a"> a. Antwort<br>
+            <input type="radio" name="f4" value="b" id="f4b"> b. Antwort<br>
+            <input type="radio" name="f4" value="c" id="f4c"> c. Antwort<br>
+            <input type="radio" name="f4" value="d" id="f4d"> d. Antwort<br>
+
+            <h3>Frage 5</h3>
+            <input type="radio" name="f5" value="a" id="f5a"> a. Antwort<br>
+            <input type="radio" name="f5" value="b" id="f5b"> b. Antwort<br>
+            <input type="radio" name="f5" value="c" id="f5c"> c. Antwort<br>
+            <input type="radio" name="f5" value="d" id="f5d"> d. Antwort<br>
+            
+            <br>
+            <input type="submit" value="Fertig">
+            </form>
+        </section>
+
+
+
+    </div>    
+</body>
+</html>
