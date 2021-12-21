@@ -9,96 +9,94 @@
     <div id="container">
         <header>
             <h1>Willkommen zum Quiz</h1>
-            <script src="game.js"></script>
-        </header>
-
+        </header> 
         <section>
-            <form name="nameForm"">Name: 
+            <form name="nameForm">Name: 
             <input type="text" name="name">
             </form>
 
             <div id="resultat"></div>
 
             <form name="quizForm" onsubmit="return submitAnswers()">
-            <h3>Frage 1</h3>
-            <input type="radio" name="f1" value="a" id="f1a"> a. Antwort<br>
-            <input type="radio" name="f1" value="b" id="f1b"> b. Antwort<br>
-            <input type="radio" name="f1" value="c" id="f1c"> c. Antwort<br>
-            <input type="radio" name="f1" value="d" id="f1d"> d. Antwort<br>
+            <h3 id="f1">Frage 1</h3>
+            <input type="radio" name="rf1" value="1"> <label for="a" id="f1_1">Antwort</label><br>
+            <input type="radio" name="rf1" value="2"> <label for="a" id="f1_2">Antwort</label><br>
+            <input type="radio" name="rf1" value="3"> <label for="a" id="f1_3">Antwort</label><br>
+            <input type="radio" name="rf1" value="4"> <label for="a" id="f1_4">Antwort</label><br>
             
-            <h3>Frage 2</h3>
-            <input type="radio" name="f2" value="a" id="f2a"> a. Antwort<br>
-            <input type="radio" name="f2" value="b" id="f2b"> b. Antwort<br>
-            <input type="radio" name="f2" value="c" id="f2c"> c. Antwort<br>
-            <input type="radio" name="f2" value="d" id="f2d"> d. Antwort<br>
+            <h3 id="f2">Frage 2</h3>
+            <input type="radio" name="rf2" value="1">  <label for="a" id="f2_1">Antwort</label><br>
+            <input type="radio" name="rf2" value="2">  <label for="a" id="f2_2">Antwort</label><br>
+            <input type="radio" name="rf2" value="3"> <label for="a"  id="f2_3">Antwort</label><br>
+            <input type="radio" name="rf2" value="4"> <label for="a"  id="f2_4">Antwort</label><br>
 
-            <h3>Frage 3</h3>
-            <input type="radio" name="f3" value="a" id="f3a"> a. Antwort<br>
-            <input type="radio" name="f3" value="b" id="f3b"> b. Antwort<br>
-            <input type="radio" name="f3" value="c" id="f3c"> c. Antwort<br>
-            <input type="radio" name="f3" value="d" id="f3d"> d. Antwort<br>
+            <h3 id="f3">Frage 3</h3>
+            <input type="radio" name="rf3" value="1">  <label for="a" id="f3_1">Antwort</label><br>
+            <input type="radio" name="rf3" value="2">  <label for="a" id="f3_2">Antwort</label><br>
+            <input type="radio" name="rf3" value="3"> <label for="a"  id="f3_3">Antwort</label><br>
+            <input type="radio" name="rf3" value="4"> <label for="a"  id="f3_4">Antwort</label><br>
 
-            <h3>Frage 4</h3>
-            <input type="radio" name="f4" value="a" id="f4a"> a. Antwort<br>
-            <input type="radio" name="f4" value="b" id="f4b"> b. Antwort<br>
-            <input type="radio" name="f4" value="c" id="f4c"> c. Antwort<br>
-            <input type="radio" name="f4" value="d" id="f4d"> d. Antwort<br>
+            <h3 id="f4">Frage 4</h3>
+            <input type="radio" name="rf4" value="1">  <label for="a" id="f4_1">Antwort</label><br>
+            <input type="radio" name="rf4" value="2">  <label for="a" id="f4_2">Antwort</label><br>
+            <input type="radio" name="rf4" value="3"> <label for="a"  id="f4_3">Antwort</label><br>
+            <input type="radio" name="rf4" value="4"> <label for="a"  id="f4_4">Antwort</label><br>
 
-            <h3>Frage 5</h3>
-            <input type="radio" name="f5" value="a" id="f5a"> a. Antwort<br>
-            <input type="radio" name="f5" value="b" id="f5b"> b. Antwort<br>
-            <input type="radio" name="f5" value="c" id="f5c"> c. Antwort<br>
-            <input type="radio" name="f5" value="d" id="f5d"> d. Antwort<br>
-
-            <h3>Frage 6</h3>
-            <input type="radio" name="f6" value="a" id="f6a"> a. Antwort<br>
-            <input type="radio" name="f6" value="b" id="f6b"> b. Antwort<br>
-            <input type="radio" name="f6" value="c" id="f6c"> c. Antwort<br>
-            <input type="radio" name="f6" value="d" id="f6d"> d. Antwort<br>
+            <h3 id="f5">Frage 5</h3>
+            <input type="radio" name="rf5" value="1">  <label for="a" id="f5_1">Antwort</label><br>
+            <input type="radio" name="rf5" value="2">  <label for="a" id="f5_2">Antwort</label><br>
+            <input type="radio" name="rf5" value="3"> <label for="a"  id="f5_3">Antwort</label><br>
+            <input type="radio" name="rf5" value="4"> <label for="a"  id="f5_4">Antwort</label><br>
             
-            <h3>Frage 7</h3>
-            <input type="radio" name="f7" value="a" id="f7a"> a. Antwort<br>
-            <input type="radio" name="f7" value="b" id="f7b"> b. Antwort<br>
-            <input type="radio" name="f7" value="c" id="f7c"> c. Antwort<br>
-            <input type="radio" name="f7" value="d" id="f7d"> d. Antwort<br>
+            <h3 id="f6">Frage 6</h3>
+            <input type="radio" name="rf6" value="1">  <label for="a" id="f6_1">Antwort</label><br>
+            <input type="radio" name="rf6" value="2">  <label for="a" id="f6_2">Antwort</label><br>
+            <input type="radio" name="rf6" value="3"> <label for="a"  id="f6_3">Antwort</label><br>
+            <input type="radio" name="rf6" value="4"> <label for="a"  id="f6_4">Antwort</label><br>
 
-            <h3>Frage 8</h3>
-            <input type="radio" name="f8" value="a" id="f8a"> a. Antwort<br>
-            <input type="radio" name="f8" value="b" id="f8b"> b. Antwort<br>
-            <input type="radio" name="f8" value="c" id="f8c"> c. Antwort<br>
-            <input type="radio" name="f8" value="d" id="f8d"> d. Antwort<br>
+            <h3 id="f7">Frage 7</h3>
+            <input type="radio" name="rf7" value="1">  <label for="a" id="f7_1">Antwort</label><br>
+            <input type="radio" name="rf7" value="2">  <label for="a" id="f7_2">Antwort</label><br>
+            <input type="radio" name="rf7" value="3"> <label for="a"  id="f7_3">Antwort</label><br>
+            <input type="radio" name="rf7" value="4"> <label for="a"  id="f7_4">Antwort</label><br>
+
+            <h3 id="f8">Frage 8</h3>
+            <input type="radio" name="rf8" value="1">  <label for="a" id="f8_1">Antwort</label><br>
+            <input type="radio" name="rf8" value="2">  <label for="a" id="f8_2">Antwort</label><br>
+            <input type="radio" name="rf8" value="3"> <label for="a"  id="f8_3">Antwort</label><br>
+            <input type="radio" name="rf8" value="4"> <label for="a"  id="f8_4">Antwort</label><br>
+
+            <h3 id="f9">Frage 9</h3>
+            <input type="radio" name="rf9" value="1">  <label for="a" id="f9_1">Antwort</label><br>
+            <input type="radio" name="rf9" value="2">  <label for="a" id="f9_2">Antwort</label><br>
+            <input type="radio" name="rf9" value="3"> <label for="a"  id="f9_3">Antwort</label><br>
+            <input type="radio" name="rf9" value="4"> <label for="a"  id="f9_4">Antwort</label><br>
+
+            <h3 id="f10">Frage 10</h3>
+            <input type="radio" name="rf10" value="1">  <label for="a" id="f10_1">Antwort</label><br>
+            <input type="radio" name="rf10" value="2">  <label for="a" id="f10_2">Antwort</label><br>
+            <input type="radio" name="rf10" value="3"> <label for="a"  id="f10_3">Antwort</label><br>
+            <input type="radio" name="rf10" value="4"> <label for="a"  id="f10_4">Antwort</label><br>
+
+            <h3 id="f11">Frage 11</h3>
+            <input type="radio" name="rf11" value="1">  <label for="a" id="f11_1">Antwort</label><br>
+            <input type="radio" name="rf11" value="2">  <label for="a" id="f11_2">Antwort</label><br>
+            <input type="radio" name="rf11" value="3"> <label for="a"  id="f11_3">Antwort</label><br>
+            <input type="radio" name="rf11" value="4"> <label for="a"  id="f11_4">Antwort</label><br>
+
+            <h3 id="f12">Frage 12</h3>
+            <input type="radio" name="rf12" value="1">  <label for="a" id="f12_1">Antwort</label><br>
+            <input type="radio" name="rf12" value="2">  <label for="a" id="f12_2">Antwort</label><br>
+            <input type="radio" name="rf12" value="3"> <label for="a"  id="f12_3">Antwort</label><br>
+            <input type="radio" name="rf12" value="4"> <label for="a"  id="f12_4">Antwort</label><br>
             
-            <h3>Frage 9</h3>
-            <input type="radio" name="f9" value="a" id="f9a"> a. Antwort<br>
-            <input type="radio" name="f9" value="b" id="f9b"> b. Antwort<br>
-            <input type="radio" name="f9" value="c" id="f9c"> c. Antwort<br>
-            <input type="radio" name="f9" value="d" id="f9d"> d. Antwort<br>
-
-            <h3>Frage 10</h3>
-            <input type="radio" name="f10" value="a" id="f10a"> a. Antwort<br>
-            <input type="radio" name="f10" value="b" id="f10b"> b. Antwort<br>
-            <input type="radio" name="f10" value="c" id="f10c"> c. Antwort<br>
-            <input type="radio" name="f10" value="d" id="f10d"> d. Antwort<br>
-
-            <h3>Frage 11</h3>
-            <input type="radio" name="f11" value="a" id="f11a"> a. Antwort<br>
-            <input type="radio" name="f11" value="b" id="f11b"> b. Antwort<br>
-            <input type="radio" name="f11" value="c" id="f11c"> c. Antwort<br>
-            <input type="radio" name="f11" value="d" id="f11d"> d. Antwort<br>
-
-            <h3>Frage 12</h3>
-            <input type="radio" name="f12" value="a" id="f12a"> a. Antwort<br>
-            <input type="radio" name="f12" value="b" id="f12b"> b. Antwort<br>
-            <input type="radio" name="f12" value="c" id="f12c"> c. Antwort<br>
-            <input type="radio" name="f12" value="d" id="f12d"> d. Antwort<br>
-
             <br>
-            <input type="submit" value="Fertig">
+            <input type="submit" value="Fertig" id="submitbtn">
             </form>
         </section>
+        <script src="questions.json"></script> 
+        <script src="game.js"></script> 
+    </div> 
 
-
-
-    </div>    
 </body>
 </html>
