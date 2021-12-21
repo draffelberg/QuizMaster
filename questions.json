@@ -1,7 +1,7 @@
 [
     {
         "question": "Was ist Azure DevOps?",
-        "amswers": [
+        "answers": [
             "Azure DevOps ermöglich das Remote arbeit",
             "Es ist ein Cloudplattform und besteht aus mer als 1000 Prdukten und Clouddiesten.",
             "Es eine entwicklungsumgebung womit dynamische Test und automatisierungstest durchgefüht können.",
@@ -11,7 +11,7 @@
     },
     {
         "question": "Welche Nachteile von Chatbots sind unten richtig aufgelistet?",
-        "amswers": [
+        "answers": [
             "verstehen Ironie, verstehen 50% der Emotionen und sind mehrsprachig.",
             "verstehen keine Ironie, keine Emotionen und sind nicht mehrsprachig.",
             "verstehen keine Ironie, verstehen 50% der Emotionen und sind nicht mehrsprachig.",
@@ -21,7 +21,7 @@
     },
     {
         "question": "Wer ist Robert Cecil martin?",
-        "amswers": [
+        "answers": [
             "Der Autor von 'Clean Code: A Hanbbook of agile Software Craftsmanship' und einer der Mitwirkenden bei der Erstellung der 12 Prinzipien des Agilen Manifests.",
             "Der Autor von 'Clean Code: A Hanbbook of agile Software Craftsmanship' und einer der Mitwirkenden bei der Erstellung der 20 Prinzipien des Agilen Manifests.",
             "Der Gründer des KFC.",
@@ -31,7 +31,7 @@
     },
     {
         "question": "Was ist Docker?",
-        "amswers": [
+        "answers": [
             "Docker ermöglicht es uns, Nachrichten Ohne Internet zu senden.",
             "docker erleichtern den Transport von daten und Personen durch die reduzierung von Kosten und Zeit. ",
             "Docker ist eine leichtgewichtige Open-Source-Technologie zur Containerisierung.",
@@ -41,7 +41,7 @@
     },
     {
         "question": "Wofür steht die Abkürzung OWASP?",
-        "amswers": [
+        "answers": [
             "Open World Application Security Plattform",
             "Open Web Android Security Plattform",
             "Open World Application Security Project",
@@ -51,7 +51,7 @@
     },
     {
         "question": "Was ist Phishing?",
-        "amswers": [
+        "answers": [
             "Betrugsversuch, bei dem der empfänger eine gefälschte E-Mail zugesendet bekommt, die er häufig jedoch nicht als solche im ersten Moment erkennt.",
             "Die Fischerei im sommer.",
             "Betrugsversuch, bei dem der Absender eine gefälschte E-Mail zugesendet bekommt, die er häufig jedoch nicht als solche im ersten Moment erkennt.",
@@ -61,7 +61,7 @@
     },
     {
         "question": "Welche Antwort listet die Prinzipien des Social Engineering korrekt auf?",
-        "amswers": [
+        "answers": [
             "Glauben, Vertrauen, social Proof, Druck aufbauen, Autorität",
             "Einschüchter, Glauben, social Proof, Druck aufbauen, Autorität",
             "Einschüchter, Vertrauen, social Proof, Augen Kontakt halten, Autorität",
@@ -71,7 +71,7 @@
     },
     {
         "question": "Wie hoch sind die Überlebenschancen nach einer Strahlenexposition mit einer Äquivalentdosis von mehr als 10Sv?",
-        "amswers": [
+        "answers": [
             "Tod nach ca. einer Stunde",
             "50%",
             "90%",
@@ -81,7 +81,7 @@
     },
     {
         "question": "Transzendale Algebra",
-        "amswers": [
+        "answers": [
             "ist eine Zeichensprache für Menschen mit Sehbehinderung.",
             "ist eine Zeichensprache, die nur zur Gestaltung von Straßenschildern verwendet wird.",
             "ist eine Zeichensprache, die sich für die nonverbale Kommunikation eignet.",
@@ -91,7 +91,7 @@
     },
     {
         "question":"Wozu die Blockchain dient?",
-        "amswers": [
+        "answers": [
             "Schnell mit Bitcoin bezahlen und dabei Steuern vermeiden.",
             "Daten zu verschlüsseln.",
             "Banküberweisungen durch die Abschaffung internationaler Gebühren erleichtern und die Versandzeiten verlängern.",
@@ -100,8 +100,8 @@
         "coorect": 3
     },
     {
-        "question": "In Welchem Jahr wurde x gegründet?",
-        "amswers": [
+        "question": "In Welchem Jahr wurde OWASP gegründet?",
+        "answers": [
             "01.12.2001",
             "12.01.2001",
             "12.12.2001",
@@ -110,7 +110,7 @@
         "coorect": 0
     },  {
         "question": "Wie heißen die Trainer des Bootcamps im Dezember 2021? ",
-        "amswers": [
+        "answers": [
             "Marrius, Markus,Jürgen",
             "Marius, Markus Jürgen",
             "BenJamin, Beniermann,Markus",

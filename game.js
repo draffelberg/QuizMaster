@@ -43,7 +43,9 @@ window.onload = function() {
     t.onclick = handler;
 }
 
-function handler()
+function handler(){
+    
+}
    
 function myFunction() {
     document.getElementById("confirm").click();
