@@ -2,42 +2,42 @@
     {
         "question": "Was ist Azure DevOps?",
         "answers": [
-            "Azure DevOps ermöglich das Remote arbeit",
-            "Es ist ein Cloudplattform und besteht aus mer als 1000 Prdukten und Clouddiesten.",
-            "Es eine entwicklungsumgebung womit dynamische Test und automatisierungstest durchgefüht können.",
-            "Es ist eine dauerhaft Kostenlose Azure-dienste für Development und Operations."
+            "Azure DevOps ermöglicht Remote Work",
+            "Azure DevOps ist ein Cloudplattform und besteht aus mehr als 1.000 Prdukten und Clouddiesten",
+            "Azure DevOps ist eine Entwicklungsumgebung, womit dynamische Tests und Automatisierungstests durchgefüht werden können",
+            "Azure DevOps ist eine dauerhaft kostenloser Dienst von Azure für 'Development' und 'Operations'"
         ],
-        "coorect": 3
+        "correct": 4
     },
     {
-        "question": "Welche Nachteile von Chatbots sind unten richtig aufgelistet?",
+        "question": "Welche Nachteile haben Chatbots?",
         "answers": [
-            "verstehen Ironie, verstehen 50% der Emotionen und sind mehrsprachig.",
-            "verstehen keine Ironie, keine Emotionen und sind nicht mehrsprachig.",
-            "verstehen keine Ironie, verstehen 50% der Emotionen und sind nicht mehrsprachig.",
-            "verstehen keine Ironie, verstehen 70% der Emotionen und sind nicht mehrsprachig."
+            "Verstehen Ironie, verstehen 50% der Emotionen und sind mehrsprachig",
+            "Verstehen keine Ironie, keine Emotionen und sind nicht mehrsprachig",
+            "Verstehen keine Ironie, verstehen 50% der Emotionen und sind nicht mehrsprachig",
+            "Verstehen keine Ironie, verstehen 70% der Emotionen und sind nicht mehrsprachig"
         ],
-        "coorect": 1
+        "correct": 2
     },
     {
-        "question": "Wer ist Robert Cecil martin?",
+        "question": "Wer ist Robert Cecil Martin?",
         "answers": [
-            "Der Autor von 'Clean Code: A Hanbbook of agile Software Craftsmanship' und einer der Mitwirkenden bei der Erstellung der 12 Prinzipien des Agilen Manifests.",
-            "Der Autor von 'Clean Code: A Hanbbook of agile Software Craftsmanship' und einer der Mitwirkenden bei der Erstellung der 20 Prinzipien des Agilen Manifests.",
-            "Der Gründer des KFC.",
-            "Der US-Präsident von 1967 bis 1963."
+            "Autor von 'Clean Code: A Hanbbook of agile Software Craftsmanship' und einer der Mitwirkenden bei der Erstellung der 12 Prinzipien des Agilen Manifests",
+            "Autor von 'Clean Code: A Hanbbook of agile Software Craftsmanship' und einer der Mitwirkenden bei der Erstellung der 20 Prinzipien des Agilen Manifests",
+            "Gründer von KFC",
+            "Der US-Präsident von 1963 bis 1967"
         ],
-        "coorect": 0
+        "correct": 1
     },
     {
         "question": "Was ist Docker?",
         "answers": [
-            "Docker ermöglicht es uns, Nachrichten Ohne Internet zu senden.",
-            "docker erleichtern den Transport von daten und Personen durch die reduzierung von Kosten und Zeit. ",
-            "Docker ist eine leichtgewichtige Open-Source-Technologie zur Containerisierung.",
-            "Docker ist eine leichtgewichtige nicht Open-Source-Technologie zur Containerisierung."
+            "Docker ermöglicht es uns Nachrichten ohne Internet-Verbindung zu senden",
+            "Docker erleichtern den Transport von Daten und Personen durch die Reduzierung von Kosten und Zeit",
+            "Docker ist eine leichtgewichtige Open-Source-Technologie zur Containerisierung",
+            "Docker ist eine leichtgewichtige nicht Open-Source-Technologie zur Containerisierung"
         ],
-        "coorect": 2
+        "correct": 3
     },
     {
         "question": "Wofür steht die Abkürzung OWASP?",
@@ -47,27 +47,27 @@
             "Open World Application Security Project",
             "Open Web Application Security Project"
         ],
-        "coorect": 3
+        "correct": 4
     },
     {
         "question": "Was ist Phishing?",
         "answers": [
-            "Betrugsversuch, bei dem der empfänger eine gefälschte E-Mail zugesendet bekommt, die er häufig jedoch nicht als solche im ersten Moment erkennt.",
-            "Die Fischerei im sommer.",
-            "Betrugsversuch, bei dem der Absender eine gefälschte E-Mail zugesendet bekommt, die er häufig jedoch nicht als solche im ersten Moment erkennt.",
-            "Die Fischerei im Winter."
+            "Betrugsversuch, bei dem der empfänger eine gefälschte E-Mail zugesendet bekommt, die er häufig jedoch nicht als solche im ersten Moment erkennt",
+            "Die Fischerei im Sommer",
+            "Betrugsversuch, bei dem der Absender eine gefälschte E-Mail zugesendet bekommt, die er häufig jedoch nicht als solche im ersten Moment erkennt",
+            "Die Fischerei im Winter"
         ],
-        "coorect": 0
+        "correct": 1
     },
     {
         "question": "Welche Antwort listet die Prinzipien des Social Engineering korrekt auf?",
         "answers": [
-            "Glauben, Vertrauen, social Proof, Druck aufbauen, Autorität",
-            "Einschüchter, Glauben, social Proof, Druck aufbauen, Autorität",
-            "Einschüchter, Vertrauen, social Proof, Augen Kontakt halten, Autorität",
-            "Einschüchter, Vertrauen, social Proof, Druck aufbauen, Autorität"
+            "Glauben, Vertrauen, Social Proof, Druck aufbauen, Autorität",
+            "Einschüchter, Glauben, Social Proof, Druck aufbauen, Autorität",
+            "Einschüchter, Vertrauen, Social Proof, Augen Kontakt halten, Autorität",
+            "Einschüchter, Vertrauen, Social Proof, Druck aufbauen, Autorität"
         ],
-        "coorect": 3
+        "correct": 4
     },
     {
         "question": "Wie hoch sind die Überlebenschancen nach einer Strahlenexposition mit einer Äquivalentdosis von mehr als 10Sv?",
@@ -75,47 +75,47 @@
             "Tod nach ca. einer Stunde",
             "50%",
             "90%",
-            "Der Tod kann vermieden werden, wenn der Patient innerhalb von 15 Minuten nach der Strahlenexposition behandelt wird."
+            "Der Tod kann vermieden werden, wenn der Patient innerhalb von 15 Minuten nach der Strahlenexposition behandelt wird"
         ],
-        "coorect": 0
+        "correct": 1
     },
     {
-        "question": "Transzendale Algebra",
+        "question": "Transzendale Algebra...",
         "answers": [
-            "ist eine Zeichensprache für Menschen mit Sehbehinderung.",
-            "ist eine Zeichensprache, die nur zur Gestaltung von Straßenschildern verwendet wird.",
-            "ist eine Zeichensprache, die sich für die nonverbale Kommunikation eignet.",
-            "ist eine Zeichensprache, die nur von Miliraten zur Verschlüsselung ihrer Nachrichten verwendet wird."
+            "...ist eine Zeichensprache für Menschen mit Sehbehinderung",
+            "...ist eine Zeichensprache, die nur zur Gestaltung von Straßenschildern verwendet wird",
+            "...ist eine Zeichensprache, die sich für die nonverbale Kommunikation eignet",
+            "...ist eine Zeichensprache, die nur vom Militär zur Verschlüsselung ihrer Nachrichten verwendet wird"
         ],
-        "coorect": 2
+        "correct": 3
     },
     {
-        "question":"Wozu die Blockchain dient?",
+        "question":"Wozu dient Blockchain?",
         "answers": [
-            "Schnell mit Bitcoin bezahlen und dabei Steuern vermeiden.",
-            "Daten zu verschlüsseln.",
-            "Banküberweisungen durch die Abschaffung internationaler Gebühren erleichtern und die Versandzeiten verlängern.",
-            "ermöglicht die Speicherung und Übertragung von Informationen auf transparente, sichere Weise und ohne zentrale Kontrollinstanz."
+            "Schnell mit Bitcoin bezahlen und dabei Steuern vermeiden",
+            "Daten zu verschlüsseln",
+            "Banküberweisungen durch die Abschaffung internationaler Gebühren erleichtern und die Versandzeiten verlängern",
+            "Ermöglicht die Speicherung und Übertragung von Informationen auf transparente, sichere Weise und ohne zentrale Kontrollinstanz"
         ],
-        "coorect": 3
+        "correct": 4
     },
     {
         "question": "In Welchem Jahr wurde OWASP gegründet?",
         "answers": [
-            "01.12.2001",
-            "12.01.2001",
-            "12.12.2001",
-            "01.02.2001"
+            "2001",
+            "2005",
+            "1998",
+            "2017"
         ],
-        "coorect": 0
+        "correct": 1
     },  {
         "question": "Wie heißen die Trainer des Bootcamps im Dezember 2021? ",
         "answers": [
-            "Marrius, Markus,Jürgen",
-            "Marius, Markus Jürgen",
-            "BenJamin, Beniermann,Markus",
-            "Melissa, Monika, Jürgen"
+            "Falk, Markus und Jürgen",
+            "Marius, Markus und Jürgen",
+            "Benjamin, Beniermann, Markus",
+            "Melisa, Monika und Jürgen"
         ],
-        "coorect": 1
+        "correct": 2
     }
 ]
