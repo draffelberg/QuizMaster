@@ -1,9 +1,8 @@
 # QuizMaster
 
 ### Erstellt von:
-### Michel
-### Negin
-### Savas
-### Dennis
-
+**Michel**
+**Negin**
+**Savas**
+**Dennis**
 ---
