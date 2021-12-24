@@ -5,8 +5,6 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import *
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 # Logger Instanz: 
 
@@ -24,7 +22,6 @@ listOfIDs = []
 logger.info("Initialisiere Webdriver.. ")
 drv = webdriver.Chrome()
 drv.get(url)
-wait = WebDriverWait(drv, 10)
 
 # Wrapper Funktion
 
