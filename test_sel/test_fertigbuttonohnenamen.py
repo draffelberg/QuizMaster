@@ -1,3 +1,4 @@
+# Imports:
 import logging
 import time
 
@@ -5,7 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import *
 
-# Logging Instanz:
+# Logger Instanz: 
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
@@ -13,58 +14,59 @@ logger.setLevel(logging.INFO)
 # Variablen
 
 url = "https://draffelberg.github.io/QuizMaster/"
-anzahl = 0
+anzahlFragen = 0 # to be overwritten
 listOfIDs = []
 
-# Driver Instanz
+# Driver Instanz:
+
+logger.info("Initialisiere Webdriver.. ")
 drv = webdriver.Chrome()
 drv.get(url)
 
-# Wrapper Funktionen
-# Zählen fragen und erstellen Antwort IDs
+# Wrapper Funktion
 
-def anzahlFragen():
+def fragenZaehlen():
+    
+    logger.info("Zähle Fragen..")
+
     try:
-        logger.info("Zähle Fragen.. ")
         counted = len(drv.find_elements_by_tag_name("h3"))
-        global anzahl
-        anzahl = counted
-        logger.info("Fragen erflogreich gezählt!")
+        global anzahlFragen
+        anzahlFragen = counted
+        logger.info("{} Fragen gefunden".format(str(counted)))
+
     except NoSuchElementException:
-        logger.warning("Fragen konnten nicht erzählt werden")
+        logger.warning("Keine Fragen gefunden")
 
 def getAnswerID():
-    if anzahl >= 1:
+    if anzahlFragen > 1:
         try:
-            logger.info("Sammle IDs...")
-            for i in range(0, anzahl):
+            logger.info("Sammle IDs")
+            for i in range(0, anzahlFragen):
                 id = "f{}".format(i+1)
-                listOfIDs.append(str(id) + "a")
-                listOfIDs.append(str(id) + "b")
-                listOfIDs.append(str(id) + "c")
-                listOfIDs.append(str(id) + "d")
+                listOfIDs.append(str(id))
         except:
-            logging.warning("Fehler bei ID Erstellung")
+            logger.warning("Fehler bei ID Erstellung")
 
-# Testfunktion
-# Klicken alle Antworten und auf Fertig ohne Namen einzugeben
+# Testfunktionen
+
 
 def test_clickAnswers():
 
-    anzahlFragen()
+    fragenZaehlen()
     getAnswerID()
-    try:
-        for i in listOfIDs:
-            drv.find_element_by_id(i).click()
-            time.sleep(0.1)
-            logger.info("Button mit der ID: {} wurde geklickt".format(i))
-    except NoSuchElementException:
-        logger.warning("")
+    logger.info("Klicke Antworten durch.. ")
+    for i in listOfIDs:
+        try:
+            questionID = i
+            antwort = drv.find_element_by_name("r{}".format(questionID))
+            antwort.click()
 
-def test_clickFinish():
-    logger.info("Suche und drücke auf 'Fertig'")
-    try:
-        finishButton = "//*[@id='container']/section/form[2]/input[49]"
-        drv.find_element_by_xpath(finishButton).click()
-    except:
-        logger.warning("Kein 'Fertig'-Button gefunden!")
+        except:
+            logger.warning("Antwort {} konnten nicht geklickt werden".format(str(i)))
+
+def test_submit():
+    submitbutton = drv.find_element_by_id("submitbtn")
+    stateOfSubmitButton = submitbutton.is_enabled()
+    logger.info("Fertig Button sollte nicht klickbar sein")
+    assert stateOfSubmitButton == False
