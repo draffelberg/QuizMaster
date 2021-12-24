@@ -67,7 +67,7 @@ def test_submit():
     stateOfSubmitButton = submitbutton.is_enabled()
     assert stateOfSubmitButton == True
     submitbutton.click()
-
-    def test_checkPoints():
+    
+def test_checkPoints():
     points = drv.find_element_by_xpath("//*[@id='resultat']/h3/span[1]").text
     assert points == '6'
