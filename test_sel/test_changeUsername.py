@@ -5,8 +5,6 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import *
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 # Logger Instanz: 
 
@@ -24,7 +22,6 @@ listOfIDs = []
 logger.info("Initialisiere Webdriver.. ")
 drv = webdriver.Chrome()
 drv.get(url)
-wait = WebDriverWait(drv, 10)
 
 # Wrapper Funktion
 
@@ -87,20 +84,20 @@ def test_submit():
         logger.warning("Fertig Button nicht klickbar")
 
 def test_enterNameAgain():
-    logger.info("Suche Namensfeld und sende Namen")
+    logger.info("Suche Namensfeld noch einmal und sende Namen")
     try:
         nameForm = drv.find_element_by_name("name")
         nameForm.click()
         nameForm.clear()
         nameForm.send_keys("Hacker" + Keys.TAB)
     except:
-        logger.warning("Fehler bei der Namenseingabe")
+        logger.warning("Fehler bei der 2. Namenseingabe")
 
 def test_submitAgain():
     logger.info("Suche Fertig Button..")
     submitbutton = drv.find_element_by_id("submitbtn")
     try:
         submitbutton.click()
-        logger.info("Fertig Button geklickt")
+        logger.info("Fertig Button zum zweiten Mal geklickt")
     except:
         logger.warning("Fertig Button nicht klickbar")
