@@ -5,6 +5,8 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import *
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 # Logger Instanz: 
 
@@ -22,6 +24,7 @@ listOfIDs = []
 logger.info("Initialisiere Webdriver.. ")
 drv = webdriver.Chrome()
 drv.get(url)
+wait = WebDriverWait(drv, 10)
 
 # Wrapper Funktion
 
@@ -64,12 +67,9 @@ def test_clickAnswers():
     fragenZaehlen()
     getAnswerID()
     logger.info("Klicke Antworten durch.. ")
-    logger.info("Erste Antwort wird übersprungen")
-    
     for i in listOfIDs:
         if i == "f1":
             continue
-            
         try:
             questionID = i
             antworten = drv.find_elements_by_name("r{}".format(questionID))
@@ -77,16 +77,23 @@ def test_clickAnswers():
             for element in antworten:
                 element.click()
                 time.sleep(0.1)
-                
         except:
             logger.warning("Antwort {} konnten nicht geklickt werden".format(str(i)))
 
 def test_submit():
-    logger.info("Suche Fertig Button..")
     submitbutton = drv.find_element_by_id("submitbtn")
-    try:
-        submitbutton.click()
-        logger.info("Fertig Button geklickt")
-    except:
-        logger.warning("Fertig Button nicht klickbar")
+    stateOfSubmitButton = submitbutton.is_enabled()
+    assert stateOfSubmitButton == True
+    submitbutton.click()
 
+def test_alert():
+
+    try:
+        WebDriverWait(drv, 3).until(EC.alert_is_present())
+        time.sleep(0.2)
+        alert = drv.switch_to.alert
+        alert.dismiss()
+        logger.info("Alert gefunden und dismissed")
+    
+    except TimeoutException:
+        logger.warning("No alert")
