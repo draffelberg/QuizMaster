@@ -81,9 +81,6 @@ def test_clickAnswers():
 def test_submit():
     logger.info("Suche Fertig Button..")
     submitbutton = drv.find_element_by_id("submitbtn")
-    try:
-        submitbutton.click()
-        logger.info("Fertig Button geklickt")
-    except:
-        logger.warning("Fertig Button nicht klickbar")
-
+    stateOfSubmitButton = submitbutton.is_enabled()
+    assert stateOfSubmitButton == True
+    submitbutton.click()
