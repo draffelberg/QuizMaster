@@ -1,4 +1,4 @@
-# Leitfaden für Testskripts
+# Blueprint für Testskripts
 ---
 ### Bitte benutzen, wenn Testskripts hochgeladen werden
 - Namenskonvention: **test_'Testfunktion'.py**
