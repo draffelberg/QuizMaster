@@ -20,7 +20,7 @@ listOfIDs = []
 # Driver Instanz:
 
 logger.info("Initialisiere Webdriver.. ")
-drv = webdriver.Chrome('/usr/local/lib/python3.7/dist-packages/selenium/webdriver/chrome/chromedriver')
+drv = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 drv.get(url)
 
 # Wrapper Funktion
