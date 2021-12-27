@@ -20,7 +20,7 @@ listOfIDs = []
 # Driver Instanz:
 
 logger.info("Initialisiere Webdriver.. ")
-drv = webdriver.Chrome('/var/lib/jenkins/workspace/QuizMaster/test_sel/chromedriver')
+drv = webdriver.Chrome()
 drv.get(url)
 
 # Wrapper Funktion
