@@ -21,6 +21,10 @@ anzahlFragen = 0 # to be overwritten
 listOfIDs = []
 
 # Driver Instanz:
+chrome_options = Options()
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--disable-dev-shm-usage')
 
 logger.info("Initialisiere Webdriver.. ")
 drv = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
