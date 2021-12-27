@@ -28,10 +28,10 @@ chrome_options.add_argument('--headless')
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
 
-s = Service(ChromeDriverManager().install())
+s = Service('/var/lib/jenkins/workspace/chromedriver')
 
 logger.info("Initialisiere Webdriver.. ")
-drv = webdriver.Chrome('/var/lib/jenkins/workspace/chromedriver', options=chrome_options, service=s)
+drv = webdriver.Chrome(service=s, options=chrome_options)
 drv.get(url)
 
 # Wrapper Funktion
