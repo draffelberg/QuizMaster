@@ -6,6 +6,9 @@ import logging
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import *
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
 
 # Logger Instanz:
 
@@ -20,9 +23,15 @@ for i in range(0,12):
     listOfIDs.append("f{}".format(i+1))
 
 # Driver Instanz:
+chrome_options = Options()
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--disable-dev-shm-usage')
 
-logger.info("Intialisiere Webdirver")
-drv = webdriver.Chrome()
+s = Service('/var/lib/jenkins/workspace/chromedriver')
+
+logger.info("Initialisiere Webdriver.. ")
+drv = webdriver.Chrome(service=s, options=chrome_options)
 drv.get(url)
 
 # Testfunktion
