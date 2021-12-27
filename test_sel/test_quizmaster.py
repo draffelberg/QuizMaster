@@ -20,7 +20,7 @@ listOfIDs = []
 # Driver Instanz:
 
 logger.info("Initialisiere Webdriver.. ")
-drv = webdriver.Chrome()
+drv = webdriver.Chrome('./chromedriver')
 drv.get(url)
 
 # Wrapper Funktion
