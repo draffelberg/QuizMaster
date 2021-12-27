@@ -29,7 +29,7 @@ chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
 
 logger.info("Initialisiere Webdriver.. ")
-drv = webdriver.Chrome('/usr/local/lib/python3.7/dist-packages/selenium/webdriver/chromedriver',options=chrome_options)
+drv = webdriver.Chrome('../../chromedriver',options=chrome_options)
 drv.get(url)
 
 # Wrapper Funktion
