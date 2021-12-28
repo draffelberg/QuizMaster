@@ -48,7 +48,6 @@ def selectAnswer():
 def test_PlayCorrect():
     logger.info("Programm beginn ...")
     logger.info("QuizMaster web page aufrufen: ")
-    driver.get(url)
     logger.info("username eingeben")
     inputName= driver.find_element_by_name(name="name")
     inputName.send_keys("Tester")
