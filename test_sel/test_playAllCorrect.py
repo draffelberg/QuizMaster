@@ -30,8 +30,8 @@ s = Service('/var/lib/jenkins/workspace/chromedriver')
 
 logger.info("Initialisiere Webdriver.. ")
 
-drv = webdriver.Chrome(service=s, options=chrome_options)
-drv.get(url)
+driver = webdriver.Chrome(service=s, options=chrome_options)
+driver.get(url)
 
 # variables
 url = "https://draffelberg.github.io/QuizMaster/"
