@@ -1,3 +1,4 @@
+```
 # Imports
 import logging
 import time
@@ -19,3 +20,4 @@ logger.info("Initialisiere Webdriver.. ")
 
 drv = webdriver.Chrome()
 drv.get(url)
+```
