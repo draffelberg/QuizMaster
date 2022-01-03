@@ -1,0 +1,100 @@
+const  eval =  require('./game');
+const  stateHandle  = require('./game');
+const  submitAnswers = require('./game');
+
+let input;  
+var rf1;
+var rf2;
+var rf3;
+var rf4;
+var rf5;
+var rf6;
+var rf7;
+var rf8;
+var rf9;
+var rf10;
+var rf11;
+var name; 
+var value;
+
+beforeAll(() => {
+  input = document.querySelector("input[name='name']");  
+  value = document.querySelector("input[name='name']").value;
+  name = document.querySelector('input[name="name"]').value;
+  rf1 = document.querySelector('input[name="rf1"]:checked');                  
+  rf2 = document.querySelector('input[name="rf2"]:checked');      
+  rf3 = document.querySelector('input[name="rf3"]:checked');
+  rf4 = document.querySelector('input[name="rf4"]:checked');
+  rf5 = document.querySelector('input[name="rf5"]:checked');
+  rf6 = document.querySelector('input[name="rf6"]:checked');
+  rf7 = document.querySelector('input[name="rf7"]:checked');
+  rf8 = document.querySelector('input[name="rf8"]:checked');
+  rf9 = document.querySelector('input[name="rf9"]:checked');
+  rf10 = document.querySelector('input[name="rf10"]:checked');
+  rf11 = document.querySelector('input[name="rf11"]:checked');
+  rf12 = document.querySelector('input[name="rf12"]:checked');
+  })
+
+test('Alert output if a question 1 has been skipped', () => {
+  expect(eval(rf1)).toEqual(null);
+});
+
+test('Alert output if a question 2 has been skipped', () => {
+  expect(eval(rf2)).toEqual(null);
+});
+
+test('Alert output if a question 3 has been skipped', () => {
+  expect(eval(rf3)).toEqual(null);
+});
+
+test('Alert output if a question 4 has been skipped', () => {
+  expect(eval(rf4)).toEqual(null);
+});
+
+test('Alert output if a question 5 has been skipped', () => {
+  expect(eval(rf5)).toEqual(null);
+});
+
+test('Alert output if a question 6 has been skipped', () => {
+  expect(eval(rf6)).toEqual(null);
+});
+ 
+test('Alert output if a question 7 has been skipped', () => {
+  expect(eval(rf7)).toEqual(null);
+});
+
+test('Alert output if a question 8 has been skipped', () => {
+  expect(eval(rf8)).toEqual(null);
+});
+
+test('Alert output if a question 9 has been skipped', () => {
+  expect(eval(rf9)).toEqual(null);
+});
+
+test('Alert output if a question 10 has been skipped', () => {
+  expect(eval(rf10)).toEqual(null);
+});
+
+test('Alert output if a question 11 has been skipped', () => {
+  expect(eval(rf11)).toEqual(null);
+});
+
+test('Alert output if a question 12 has been skipped', () => {
+  expect(eval(rf12)).toEqual(null);
+});
+
+test('disabled "Fertig" Button', () => {
+  expect(stateHandle(value)).toBe(true);
+});
+
+test('enabled "Fertig" Button', () => {
+    expect(stateHandle(value)).toBe(false);
+  });
+  
+test('"Fertig" Button works', () => {
+  expect(submitAnswers(name)).toBe(true);
+});
+
+test('"Fertig" Button dose not work', () => {
+    expect(submitAnswers(name)).toBe(false);
+  });
