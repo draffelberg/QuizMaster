@@ -77,4 +77,4 @@ def test_submit():
 
 def test_checkPoints():
     points = drv.find_element_by_xpath("//*[@id='resultat']/h3/span[1]").text
-    assert points == '0'
+    assert points == '1'
